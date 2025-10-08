@@ -125,7 +125,7 @@ body {
 
 .top {
 	min-height: calc(100vh - 81px);
-	background-image: url(../images/top-bg.jpg);
+	background-image: url(../images/top-bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom center;
@@ -259,7 +259,7 @@ body {
 	grid-column: 2/3;
 	width: 280px;
 	height: 150px;
-	background-image: url(../images/content-bg.jpg);
+	background-image: url(../images/content-bg.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -433,7 +433,7 @@ body {
 }
 
 .promo__inner {
-	background-image: url(../images/promo.jpg);
+	background-image: url(../images/promo.webp);
 	min-height: 500px;
 	background-size: cover;
 	background-repeat: no-repeat;
