@@ -98,6 +98,20 @@ body {
 	gap: 0 20px;
 }
 
+.menu__link {
+	position: relative;
+	color: #5C5C5E;
+	transition: all 190ms ease-in;
+}
+
+.menu__link:hover {
+	color: black;
+}
+
+.menu__link:active {
+	top: 2px;
+}
+
 .logo {
 	justify-self: center;
 	display: flex;
@@ -311,6 +325,7 @@ body {
 }
 
 .game__link {
+	position: relative;
 	display: inline-block;
 	background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
 	background-clip: text;
@@ -323,6 +338,10 @@ body {
 	text-align: center;
 	border: 1px solid;
 	border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+}
+
+.game__link:active {
+	top: 2px;
 }
 
 .game__item {
@@ -347,11 +366,26 @@ body {
 }
 
 .game__item-link {
+	position: relative;
+	width: 100px;
+	font-size: 18px;
+	font-weight: 700;
 	background: var(--gradient, linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%));
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: auto;
+}
+
+.game__item-link:hover {
+	background: var(--gradient, linear-gradient(180deg, #42004d 0%, rgba(38, 0, 121, 0.93) 100%));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.game__item-link:active {
+	top: 2px;
 }
 
 .buy {
@@ -515,6 +549,7 @@ body {
 }
 
 .accessories__item-btn {
+	position: relative;
 	border: 1px solid;
 	border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 	padding: 6px;
@@ -525,6 +560,10 @@ body {
 	-webkit-text-fill-color: transparent;
 	text-align: center;
 	width: 100%;
+}
+
+.accessories__item-btn:active {
+	top: 2px;
 }
 
 .contacts {
@@ -564,6 +603,13 @@ body {
 	padding: 22px 70px 22px 0;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	box-shadow: none;
+}
+
 .form__input::placeholder {
 	font-family: "Helvetica";
 	font-style: normal;
@@ -571,6 +617,7 @@ body {
 	font-size: 13px;
 	line-height: 18px;
 	color: #CACAD6;
+	padding: 10px;
 }
 
 .form__btn {
@@ -584,6 +631,7 @@ body {
 	position: absolute;
 	right: 0;
 	bottom: 5px;
+	padding: 10px;
 }
 
 .footer {
